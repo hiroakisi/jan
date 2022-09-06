@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <title>予約表</title>
-    <style>
-    table,tr,td,th{
-        border: solid 1px black; border-collapse: collapse;
+  <meta charset="UTF-8">
+  <title>スコア表</title>
+  <style>
+    table,
+    tr,
+    td,
+    th {
+      border: solid 1px black;
+      border-collapse: collapse;
     }
-    td,th{
-        min-width: 32px;
+
+    td,
+    th {
+      min-width: 32px;
     }
-    th{
-        background: silver;
+
+    th {
+      background: silver;
     }
-    </style>
+  </style>
 </head>
+
 <body>
-    <table>
-        <tr>
-           <th>時間(時)</th><?php for($i=0;$i<24;$i++) print '<th>'.$i.'</th>'; ?>
-        </tr>
-        <tr>
-           <th>会議室A</th><?php for($i=0;$i<24;$i++) print '<td></td>'; ?>
-        </tr>
-        <tr>
-           <th>会議室B</th><?php for($i=0;$i<24;$i++) print '<td></td>'; ?>
-        </tr>
-        <tr>
-           <th>会議室C</th><?php for($i=0;$i<24;$i++) print '<td></td>'; ?>
-        </tr>
-    </table>
+<button>入力</button>
+<button>グラフへ</button>
+<a href="./dbsample.php">move</a>
+  <table>
+    <tr>
+      <th>No</th>
+      <th>日付</th>
+      <th>ランク</th>
+      <th>間</th>
+      <th>局数</th>
+      <th>ツモ上がり</th>
+      <th>ロン上がり</th>
+      <th>ツモられ</th>
+      <th>自放銃</th>
+      <th>他放銃</th>
+      <th>順位</th>
+      <th>点数</th>
+      <th>増減ポイント</th>
+      <th>ポイント</th>
+    </tr>
+    <tr>
+      <td>
+      </td>
+    </tr>
+  </table>
+  
 </body>
+
 </html>
