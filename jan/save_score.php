@@ -44,9 +44,9 @@ try {
 
   //出力結果をそれぞれの配列に格納
   $total_point = array_column($row, 'total_point');
-  $total_point += 
-  //SQLを作成
-  $sql = "INSERT INTO score(
+  $total_point +=
+    //SQLを作成
+    $sql = "INSERT INTO score(
     rank_id,
     stage_id,
     sum_count,
